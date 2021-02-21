@@ -3,8 +3,70 @@
 <head>
 	<meta charset="utf-8">
 <title>lists</title>
+<link rel="stylesheet" href="style.css">
+<!-- <style>
+	
+#highlighted{
+	font-size : 20px;
+	background-color: yellow;
+	opacity: 0.6;
+}
+.heading{
+	color :red;
+	font-family: "Lucida Console";
+	font-size: 18px;
+	text-align: center;
+}
+.para{
+	font-style: italic;
+}
+.h1.h2{
+	color :green;
+	font-size: 36px;
+	text-align: center;	
+}
+header li{
+	font-size: 20px;
+	list-style: none;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color :red;
+	background-color: black;
+	display : block;
+	width : 200px;
+	text-align: center;
+}
+a:hover, a:active{
+	color :green;
+	cursor:pointer;
+}
+</style> -->
 </head>
 <body>
-	
+	<header>
+		A few links
+		<ul>	
+		<li><a href = "https://www.w3schools.com/css/css_font.asp" > w3schools</a></li>
+		<li><a target = '_blank' href = "http://csszengarden.com/219/"> cool css </a></li>
+	 </header>
+	<h1>Starting to style my first webpage</h1>
+	<h2 class="heading para"> this is going to be fun</h2>
+	<p id = "highlighted">
+		CSS selectors are used to determine which HTML element, or set of elements, to apply the CSS declarations to. The browser uses its selector API to traverse the DOM or Document Object Model, and pick out the elements matching the selector. Now crafting a selector is a great skill to have and not only for styling using CSS. That's because a lot of JavaScript libraries out there use the browser selector API to attach behavior and data to HTML elements. Much in the same way that CSS applies style to those elements. In this lecture, we're going to talk about three different types of selectors, element, class, and id selector.
+Play video starting at ::48 and follow transcript0:48
+First element selector, the element selector is just you specifying the element name. For example, in this case, p for paragraph says that every paragraph in our HTML document should be colored blue.
+Play video starting at :1:2 and follow transcript1:02
+As an example, if we specified p paragraph and color blue, that means every paragraph in the HTML document will have its content's text be blue. Obviously, this really doesn't affect any other elements that contain text in them. For example, we can have a div element that contains text but that text will not be affected by our CSS rule that specifies that the paragraph tag should have content text colored blue.
+	</p>
+	<h2 class="heading"> This is the second heading</h2>
+	<p>
+		Next is the class selector, and the class selector is specified with a dot and the name of the class. In this case again, we're creating a blue class, a blue CSS class, that will color whatever it targets with the color blue.
+Play video starting at :1:47 and follow transcript1:47
+The class selector does require a little bit of a change to your HTML document in that each element that you want that class applied to has to have a attribute class equal to the class name. So in this case we have a p, the paragraph tag and div tag both have the attribute class="blue" and therefore, their content or their text content will be colored blue. Notice that a different paragraph that is not marked with attribute class="blue" is completely unaffected by this. Note the differences between the way you define a class and then the way you use the class. You define the class always with a dot in front of a name. There cannot be any space between the dot and the name of the class in case no space between the dot and the word blue. However, when you use the class, you don't use the dot in its name, you just use its name. So here we have the paragraph tag with class="blue" without the dot in front of it. The last type of selector we're going to take a look at in this lecture is the id selector. The way you specify an id selector is by specifying the value of an id of an element within your HTML document, preceded by a pound sign. So the name is a value of some id within our HTML document. So for example, if you have a div when id="name" and then you specify your CSS rule with a selector #name, the CSS declarations for that #name will apply to the content of the div element with its id value name. Note that obviously everything else in the HTML document is completely unaffected by this. Similarly, in the way you define a class selector versus use a class selector, the id selector is defined with a pound sign followed by the value of an id within your HTML document. And again, you can not have any space between the two. But when you use it the pound goes away, it's just the actual value of the id itself. Now in order to write more efficient rules, CSS allows us to group several selectors into one CSS rule. Here we have two selectors grouped together, div and the selected div for the div element, and a selector class blue grouped into one, since they both share the same CSS declaration. And you can see, in our HTML, the blue colored text will appear in the paragraph tag that has the attribute class="blue" and in any div tag in the HTML document. So let's take a look at an example of using these selectors.
+	</p>
+	<span> This is something else right? </span>
+	<footer id = "highlighted"> This is made by mihir &copy; mihirsakaria </footer>
 </body>
 </html>
